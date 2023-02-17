@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1PZEICRKScn2sbSertmzD5l1MVQbDpTTx
 """
 
+# CalculateTaxiFare
+
 def fare(distance):
     if (distance <= 4):
         km = distance * 2.00
@@ -27,6 +29,8 @@ else:
     displayFare = fare(distance) 
 print(f"Good day to you {name}, the fare would have been \
 [${displayFare:.2f}], have a lovely day! ")
+
+# CalculateGstAndDiscountedPrice
 
 def calcShopping(price):
     if (price >= 100):
@@ -50,11 +54,14 @@ else:
     print(f"The total price payable would have been [${CalcTotalPrice:.2f}].")
     print(f"Inclusive '8%' GST, amounted to [${CalcGst:.2f}].")
     print(f"Note that the payable price has included the discount of [${CalcDisc:.2f}].")
+    
+# ASimpleWeightConverterToConvertFromKgToLbsOrViceVersa
 
 def weightConv(WeightInput):
     LbsToKg = WeightInput / 2.205
     KgToLbs = WeightInput * 2.205
     return LbsToKg, KgToLbs
+
 
 weightConv(100)
 
